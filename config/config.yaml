@@ -1,0 +1,16 @@
+# Analysis configuration for the Alzheimer's disease interaction network.
+# Every script reads this file; override the path with --config.
+
+disease:
+  id: "DOID:10652"            # Disease Ontology ID used by Hetionet
+  name: "Alzheimer's disease"
+
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+
+output:
+  results_dir: results
+  cytoscape_dir: cytoscape
+
+random_seed: 42
