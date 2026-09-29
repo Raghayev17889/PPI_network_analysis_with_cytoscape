@@ -9,6 +9,13 @@ data:
   raw_dir: data/raw
   processed_dir: data/processed
 
+interactome:
+  # Ubiquitin-encoding genes: proteomics screens report every ubiquitinated
+  # protein as an interaction partner (UBC alone has 8,611), which would make
+  # ubiquitin the dominant hub of any network built from this interactome.
+  exclude_symbols: ["UBC", "UBB", "UBA52", "RPS27A"]
+  largest_component: true
+
 output:
   results_dir: results
   cytoscape_dir: cytoscape
