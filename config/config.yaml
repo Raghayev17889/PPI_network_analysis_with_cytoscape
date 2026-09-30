@@ -16,6 +16,10 @@ interactome:
   exclude_symbols: ["UBC", "UBB", "UBA52", "RPS27A"]
   largest_component: true
 
+disease_module:
+  random_sets: 1000           # degree-matched random gene sets for the LCC test
+  min_degree_bin: 100         # proteins per degree bin when sampling
+
 output:
   results_dir: results
   cytoscape_dir: cytoscape
