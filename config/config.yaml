@@ -20,6 +20,11 @@ disease_module:
   random_sets: 1000           # degree-matched random gene sets for the LCC test
   min_degree_bin: 100         # proteins per degree bin when sampling
 
+diamond:
+  n_genes: 200                # proteins added to the seed module
+  alpha: 1                    # weight of links to seed genes (1 = original DIAMOnD)
+  cv_folds: 5                 # cross-validation: recover held-out seed genes
+
 output:
   results_dir: results
   cytoscape_dir: cytoscape

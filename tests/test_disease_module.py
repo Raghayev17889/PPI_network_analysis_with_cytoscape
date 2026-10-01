@@ -34,7 +34,8 @@ def test_degree_matched_sample():
     bins = degree_bins(graph, 50)
     sample = degree_matched_sample(clique, bins, np.random.default_rng(1))
     assert len(sample) == len(set(sample)) == len(clique)
-    assert all(s in bins[c] or True for s, c in zip(sorted(sample), clique))
+    allowed = {node for c in clique for node in bins[c]}
+    assert set(sample) <= allowed  # every draw comes from a seed's degree bin
 
 
 def test_clique_is_a_significant_module():
