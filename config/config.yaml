@@ -21,7 +21,8 @@ disease_module:
   min_degree_bin: 100         # proteins per degree bin when sampling
 
 diamond:
-  n_genes: 200                # proteins added to the seed module
+  n_genes: 200                # DIAMOnD iterations computed (ranked list is saved)
+  network_genes: 100          # top DIAMOnD proteins added to the disease network
   alpha: 1                    # weight of links to seed genes (1 = original DIAMOnD)
   cv_folds: 5                 # cross-validation: recover held-out seed genes
 
