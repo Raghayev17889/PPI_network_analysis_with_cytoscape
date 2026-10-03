@@ -22,7 +22,7 @@ disease_module:
 
 diamond:
   n_genes: 200                # DIAMOnD iterations computed (ranked list is saved)
-  network_genes: 100          # top DIAMOnD proteins added to the disease network
+  network_genes: 50           # top DIAMOnD proteins added to the disease network
   alpha: 1                    # weight of links to seed genes (1 = original DIAMOnD)
   cv_folds: 5                 # cross-validation: recover held-out seed genes
 
@@ -30,6 +30,12 @@ topology:
   hub_quantile: 0.9           # top 10% by degree = hubs
   bottleneck_quantile: 0.9    # top 10% by betweenness = bottlenecks
   random_attacks: 20          # random-removal repeats in the robustness analysis
+
+clustering:
+  method: louvain             # louvain | greedy
+  resolution: 1.0
+  min_cluster_size: 5         # smaller communities are grouped as cluster 0 ("other")
+  stability_runs: 20          # Louvain reruns for the adjusted Rand index
 
 output:
   results_dir: results
