@@ -26,6 +26,11 @@ diamond:
   alpha: 1                    # weight of links to seed genes (1 = original DIAMOnD)
   cv_folds: 5                 # cross-validation: recover held-out seed genes
 
+topology:
+  hub_quantile: 0.9           # top 10% by degree = hubs
+  bottleneck_quantile: 0.9    # top 10% by betweenness = bottlenecks
+  random_attacks: 20          # random-removal repeats in the robustness analysis
+
 output:
   results_dir: results
   cytoscape_dir: cytoscape
