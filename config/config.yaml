@@ -37,6 +37,22 @@ clustering:
   min_cluster_size: 5         # smaller communities are grouped as cluster 0 ("other")
   stability_runs: 20          # Louvain reruns for the adjusted Rand index
 
+enrichment:
+  fdr: 0.05                   # Benjamini-Hochberg threshold
+  min_set_size: 5
+  max_set_size: 500
+  label_source: pathway       # collection used for automatic cluster labels
+
+# Short curated names for the Louvain clusters, chosen after reviewing the
+# enrichment results (results/tables/cluster_enrichment.tsv). Clusters without
+# an entry fall back to their most significant pathway.
+cluster_names:
+  1: "APP processing & amyloid"
+  2: "Apoptosis & neuronal death"
+  3: "Translation & protein folding"
+  4: "Growth factor & IGF signalling"
+  5: "Glutamatergic synapse"
+
 output:
   results_dir: results
   cytoscape_dir: cytoscape
