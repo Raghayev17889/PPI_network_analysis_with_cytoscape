@@ -26,14 +26,26 @@ def detect_communities(
     resolution: float = 1.0,
     seed: int = 42,
 ) -> list[set[str]]:
-    """Communities sorted by decreasing size."""
+    """Communities sorted by decreasing size.
+
+    Nodes are relabelled to integers in sorted order before clustering:
+    Louvain iterates over sets internally, and string hashing is randomised
+    per Python process, so string-labelled graphs would give different
+    partitions on every run even with a fixed ``seed``.
+    """
+    nodes = sorted(graph.nodes(), key=str)
+    to_int = {n: i for i, n in enumerate(nodes)}
+    relabelled = nx.Graph()
+    relabelled.add_nodes_from(range(len(nodes)))
+    relabelled.add_edges_from(sorted((min(to_int[u], to_int[v]), max(to_int[u], to_int[v])) for u, v in graph.edges()))
     if method == "louvain":
-        communities = nx.community.louvain_communities(graph, resolution=resolution, seed=seed)
+        communities = nx.community.louvain_communities(relabelled, resolution=resolution, seed=seed)
     elif method == "greedy":
-        communities = nx.community.greedy_modularity_communities(graph, resolution=resolution)
+        communities = nx.community.greedy_modularity_communities(relabelled, resolution=resolution)
     else:
         raise ValueError(f"Unknown method {method!r}; use 'louvain' or 'greedy'")
-    return sorted((set(c) for c in communities), key=lambda c: (-len(c), min(c)))
+    named = [{nodes[i] for i in c} for c in communities]
+    return sorted(named, key=lambda c: (-len(c), min(map(str, c))))
 
 
 def membership(communities: list[set[str]], min_size: int = 1) -> dict[str, int]:

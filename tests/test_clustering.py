@@ -53,3 +53,21 @@ def test_cluster_network_and_summary(two_cliques):
     assert summary.loc[1, "seed_genes"] + summary.loc[1, "diamond_genes"] == 8
     stability = partition_stability(two_cliques, labels, runs=3)
     assert (stability["adjusted_rand_index"] > 0.9).all()
+
+
+def test_partition_is_identical_across_processes(tmp_path):
+    """String hashing differs per process; the partition must not."""
+    import subprocess
+    import sys
+
+    script = (
+        "import networkx as nx; from src.clustering import detect_communities;"
+        "g = nx.relabel_nodes(nx.les_miserables_graph(), lambda n: 'P_' + n);"
+        "print(sorted(sorted(c) for c in detect_communities(g)))"
+    )
+    outputs = {
+        subprocess.run([sys.executable, "-c", script], capture_output=True, text=True, check=True,
+                       env={"PYTHONHASHSEED": str(seed), "PYTHONPATH": "."}).stdout
+        for seed in (1, 2, 3)
+    }
+    assert len(outputs) == 1
