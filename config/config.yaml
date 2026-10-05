@@ -53,6 +53,9 @@ cluster_names:
   4: "Growth factor & IGF signalling"
   5: "Glutamatergic synapse"
 
+cytoscape:
+  base_url: "http://127.0.0.1:1234/v1"   # CyREST endpoint of a running Cytoscape (3.10+)
+
 output:
   results_dir: results
   cytoscape_dir: cytoscape
