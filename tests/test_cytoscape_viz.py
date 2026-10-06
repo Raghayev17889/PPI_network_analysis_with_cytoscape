@@ -90,3 +90,19 @@ def test_offline_exports(tmp_path, annotated_graph):
     assert reloaded.nodes["0"]["drug_status"] == "AD drug target"
     assert json.loads(files["cyjs"].read_text())["elements"]["nodes"]
     assert isinstance(pd.read_json(files["cyjs"], typ="series"), pd.Series)
+
+
+def test_clustered_layout_is_deterministic_and_separates_clusters(annotated_graph):
+    from src.cytoscape_viz import clustered_layout
+
+    labels = nx.get_node_attributes(annotated_graph, "cluster")
+    first = clustered_layout(annotated_graph, labels)
+    assert first == clustered_layout(annotated_graph, labels)
+    assert set(first) == set(annotated_graph)
+
+    def centroid(cluster):
+        pts = [first[n] for n, c in labels.items() if c == cluster]
+        return sum(p[0] for p in pts) / len(pts), sum(p[1] for p in pts) / len(pts)
+
+    (x1, y1), (x2, y2) = centroid(1), centroid(2)
+    assert ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5 > 100
