@@ -138,7 +138,9 @@ def diamond_cross_validation(
     first ``n_genes`` additions, compared with the number expected if the
     additions were random proteins (outside the training seeds).
 
-    Returns one row per fold with ``recovered``, ``expected`` and ``fold_enrichment``.
+    Returns one row per fold with ``recovered``, ``expected``,
+    ``fold_enrichment`` and the DIAMOnD ranks at which held-out genes were
+    found (``recovered_ranks``, for recovery curves).
     """
     seeds = sorted({s for s in seeds if s in graph})
     rng = np.random.default_rng(seed)
@@ -148,7 +150,8 @@ def diamond_cross_validation(
         held_out = {seeds[i] for i in order[fold::folds]}
         training = [s for s in seeds if s not in held_out]
         added = diamond(graph, training, n_genes=n_genes)
-        recovered = len(held_out & set(added["gene"]))
+        hits = added[added["gene"].isin(held_out)]
+        recovered = len(hits)
         background = graph.number_of_nodes() - len(training)
         expected = len(added) * len(held_out) / background
         rows.append(
@@ -156,9 +159,11 @@ def diamond_cross_validation(
                 "fold": fold + 1,
                 "training_seeds": len(training),
                 "held_out_seeds": len(held_out),
+                "background": background,
                 "recovered": recovered,
                 "expected": expected,
                 "fold_enrichment": recovered / expected if expected else float("nan"),
+                "recovered_ranks": hits["rank"].tolist(),
             }
         )
     return pd.DataFrame(rows)
