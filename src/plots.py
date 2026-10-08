@@ -38,7 +38,7 @@ STYLE = {
 }
 CLASS_COLORS = {
     "hub-bottleneck": PALETTE[7],
-    "non-hub bottleneck": PALETTE[1],
+    "non-hub bottleneck": PALETTE[3],
     "hub non-bottleneck": PALETTE[0],
     "peripheral": "#c3c2b7",
 }
@@ -62,7 +62,7 @@ def plot_module_significance(random_lcc: np.ndarray, observed: int, z_score: flo
     """Histogram of random LCC sizes with the observed seed LCC."""
     with plot_style():
         fig, ax = plt.subplots(figsize=(6.4, 4.0))
-        bins = np.arange(random_lcc.min() - 0.5, max(random_lcc.max(), observed) + 1.5, 1)
+        bins = np.arange(random_lcc.min() - 1, max(random_lcc.max(), observed) + 3, 3)
         ax.hist(random_lcc, bins=bins, color=PALETTE[0], alpha=0.85, label="degree-matched random gene sets")
         ax.axvline(observed, color=PALETTE[7], linewidth=2.2, label=f"Alzheimer's seed genes ({observed})")
         ax.set(xlabel=f"Largest connected component (of {n_genes} genes)", ylabel="Random sets")

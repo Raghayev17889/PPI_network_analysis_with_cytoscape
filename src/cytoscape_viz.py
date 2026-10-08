@@ -431,5 +431,5 @@ def export_style_xml(path: str | Path, style: str = STYLE_NAME, base_url: str = 
 
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
-    p4c.export_visual_styles(str(path), type="XML", styles=[style], overwrite_file=True, base_url=base_url)
+    p4c.export_visual_styles(str(path), type="XML", styles=style, overwrite_file=True, base_url=base_url)
     return path

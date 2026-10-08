@@ -271,6 +271,12 @@ def main(argv: list[str] | None = None) -> dict:
         format="%(asctime)s %(levelname)-7s %(name)s: %(message)s",
         datefmt="%H:%M:%S",
     )
+    try:  # py4cytoscape configures its loggers on import and logs every REST call at DEBUG
+        import py4cytoscape  # noqa: F401
+
+        logging.getLogger("py4...").propagate = False  # keep its own log file, not the console
+    except ImportError:
+        pass
     matplotlib.use("Agg")
     return run(load_config(args.config), use_cytoscape=not args.no_cytoscape, cross_validate=not args.skip_cv)
 
