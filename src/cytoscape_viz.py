@@ -63,8 +63,10 @@ def cytoscape_tables(
     ``drug_status``, ``cluster_name`` and a ``tooltip``.
     """
     nodes = pd.DataFrame([{"id": n, **attrs} for n, attrs in graph.nodes(data=True)])
+    # Add centrality columns unless the graph already carries them as node attributes.
     metrics = [c for c in ("degree", "betweenness", "closeness", "eigenvector", "clustering", "k_core",
-                           "is_hub", "is_bottleneck", "centrality_class") if c in centrality.columns]
+                           "is_hub", "is_bottleneck", "centrality_class")
+               if c in centrality.columns and c not in nodes.columns]
     nodes = nodes.merge(centrality[["id"] + metrics], on="id", how="left")
     cluster_names = cluster_names or {}
     if "cluster" not in nodes:

@@ -106,3 +106,11 @@ def test_clustered_layout_is_deterministic_and_separates_clusters(annotated_grap
 
     (x1, y1), (x2, y2) = centroid(1), centroid(2)
     assert ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5 > 100
+
+
+def test_tables_accept_graphs_that_already_carry_metrics(annotated_graph):
+    table = classify_hubs_bottlenecks(centrality_table(annotated_graph))
+    for row in table.to_dict(orient="records"):
+        annotated_graph.nodes[row["id"]].update({k: v for k, v in row.items() if k not in ("id", "symbol")})
+    nodes, _ = cytoscape_tables(annotated_graph, table)
+    assert "degree" in nodes.columns and "degree_x" not in nodes.columns
