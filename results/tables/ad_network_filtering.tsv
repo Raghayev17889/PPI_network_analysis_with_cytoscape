@@ -1,0 +1,6 @@
+step	description	proteins	interactions
+seed genes	disease-associated genes (Hetionet DaG)	196	
+in interactome	seeds present in the filtered interactome	183	
+module expansion	+ top 50 DIAMOnD proteins	233	
+induced subgraph	interactions among selected proteins	233	1086.0
+largest component	drop proteins disconnected from the main network	190	1085.0

@@ -1,0 +1,6 @@
+cluster	size	seed_genes	diamond_genes	internal_edges	density	top_proteins	name	top_pathway
+1	62	45	17	222	0.11739820200951877	APP, A2M, CDC37, RNF32, MAST1	APP processing & amyloid	Alzheimers Disease
+2	59	52	7	143	0.08357685563997662	AKT1, SNCA, TP53, BCL2, BCL2L1	Apoptosis & neuronal death	Intrinsic Pathway for Apoptosis
+3	34	8	26	468	0.8342245989304813	HSP90AA1, HSPD1, VIM, YBX1, VDAC1	Translation & protein folding	Formation of the ternary complex, and s…
+4	26	26	0	36	0.11076923076923077	ESR1, CTSB, IGF1R, TTR, CTSD	Growth factor & IGF signalling	SHP2 signaling
+5	9	9	0	8	0.2222222222222222	DLG4, PPP5C, PRKCG, GRIN2B, GRIK2	Glutamatergic synapse	Transmission across Chemical Synapses

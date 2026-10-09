@@ -1,0 +1,191 @@
+id	symbol	role	diamond_rank	diamond_p	interactome_degree	expression	ad_drug_target	ad_drugs	druggable	cluster	degree	betweenness	closeness	eigenvector	clustering	k_core	is_hub	is_bottleneck	centrality_class	cluster_name
+351	APP	seed	0	1.0	1903	down	False		False	1	85	0.45665986158736993	0.6019108280254777	0.08494799738065252	0.0680672268907563	11	True	True	hub-bottleneck	APP processing & amyloid
+3320	HSP90AA1	diamond	27	2.391286074321487e-08	607	none	False		True	3	52	0.087456475905826	0.525	0.18937963353407639	0.39215686274509803	30	True	True	hub-bottleneck	Translation & protein folding
+2099	ESR1	seed	0	1.0	806	none	False		True	4	34	0.06086338894023993	0.4489311163895487	0.11148798074744465	0.31194295900178254	18	True	True	hub-bottleneck	Growth factor & IGF signalling
+207	AKT1	seed	0	1.0	224	none	False		True	2	25	0.042066441325623614	0.47368421052631576	0.03369272099899237	0.19	9	False	True	non-hub bottleneck	Apoptosis & neuronal death
+3329	HSPD1	seed	0	1.0	228	none	False		False	3	40	0.03925760820688287	0.4934725848563969	0.18158731439831644	0.6076923076923076	30	True	True	hub-bottleneck	Translation & protein folding
+1742	DLG4	seed	0	1.0	116	none	False		True	5	7	0.03891318194049079	0.39293139293139295	0.003756505405403493	0.047619047619047616	3	False	True	non-hub bottleneck	Glutamatergic synapse
+7157	TP53	seed	0	1.0	539	none	False		True	2	21	0.03822119485471662	0.4117647058823529	0.033028024510211876	0.1380952380952381	9	False	True	non-hub bottleneck	Apoptosis & neuronal death
+29979	UBQLN1	seed	0	1.0	161	none	False		False	1	8	0.036675260000091144	0.4021276595744681	0.004313340559107609	0.14285714285714285	5	False	True	non-hub bottleneck	APP processing & amyloid
+2	A2M	seed	0	1.0	96	none	False		True	1	26	0.032948569103528245	0.44786729857819907	0.014142337622812397	0.2923076923076923	9	False	True	non-hub bottleneck	APP processing & amyloid
+5663	PSEN1	seed	0	1.0	91	none	False		False	1	23	0.031911045432128596	0.4643734643734644	0.014733973551554924	0.2015810276679842	9	False	True	non-hub bottleneck	APP processing & amyloid
+1508	CTSB	seed	0	1.0	37	none	False		False	4	8	0.027592747023102996	0.4021276595744681	0.0040721122708843585	0.25	5	False	True	non-hub bottleneck	Growth factor & IGF signalling
+836	CASP3	seed	0	1.0	172	none	False		True	2	15	0.02752362847985315	0.45215311004784686	0.01897344452806237	0.19047619047619047	9	False	True	non-hub bottleneck	Apoptosis & neuronal death
+7431	VIM	diamond	29	1.0463130503238683e-08	257	none	False		False	3	40	0.024999079877708823	0.4896373056994819	0.18038466561179384	0.6064102564102564	30	True	True	hub-bottleneck	Translation & protein folding
+7416	VDAC1	diamond	23	2.658870628769638e-08	123	none	False		True	3	39	0.02383527586926487	0.43249427917620137	0.17999338719338634	0.6450742240215924	30	True	True	hub-bottleneck	Translation & protein folding
+1191	CLU	seed	0	1.0	62	up	False		False	2	9	0.023034318591592762	0.42954545454545456	0.010548440135821536	0.16666666666666666	5	False	True	non-hub bottleneck	Apoptosis & neuronal death
+6622	SNCA	seed	0	1.0	132	none	False		False	2	21	0.02273937600208113	0.4643734643734644	0.03988170328584937	0.23809523809523808	9	False	True	non-hub bottleneck	Apoptosis & neuronal death
+598	BCL2L1	diamond	20	7.1271997206868084e-09	92	none	False		False	2	17	0.02174223942262151	0.4126637554585153	0.013469401041873955	0.3014705882352941	9	False	True	non-hub bottleneck	Apoptosis & neuronal death
+5664	PSEN2	seed	0	1.0	64	none	False		False	1	21	0.02148640508346584	0.4315068493150685	0.007521139921408348	0.2523809523809524	9	False	True	non-hub bottleneck	APP processing & amyloid
+2597	GAPDH	seed	0	1.0	198	none	False		False	3	38	0.021051026370023592	0.4909090909090909	0.18278459636610994	0.6870554765291608	30	True	True	hub-bottleneck	Translation & protein folding
+10399	GNB2L1	diamond	28	8.093482209820409e-09	176	none	False		False	3	38	0.02102060032994184	0.4334862385321101	0.1783535028451629	0.6543385490753911	30	True	False	hub non-bottleneck	Translation & protein folding
+7276	TTR	seed	0	1.0	53	none	False		True	4	8	0.019541207861627	0.42567567567567566	0.009771570509117544	0.17857142857142858	4	False	False	peripheral	Growth factor & IGF signalling
+920	CD4	diamond	45	6.95058851004849e-25	109	none	False		False	3	32	0.01912014487022726	0.4090909090909091	0.17222610610702851	0.8770161290322581	30	True	False	hub non-bottleneck	Translation & protein folding
+2185	PTK2B	seed	0	1.0	81	none	False		True	2	7	0.0190245257951674	0.3772455089820359	0.01379132202352753	0.19047619047619047	4	False	False	peripheral	Apoptosis & neuronal death
+1509	CTSD	seed	0	1.0	30	none	False		False	4	7	0.018949726918701035	0.4209354120267261	0.012253149312037468	0.19047619047619047	5	False	False	peripheral	Growth factor & IGF signalling
+309	ANXA6	diamond	26	3.981554925809785e-08	84	none	False		False	3	35	0.017166810174447242	0.441588785046729	0.17437343373101358	0.7428571428571429	30	True	False	hub non-bottleneck	Translation & protein folding
+801	CALM1	seed	0	1.0	307	down	False		True	2	16	0.016991835960130774	0.4055793991416309	0.03780043417092288	0.23333333333333334	9	False	False	peripheral	Apoptosis & neuronal death
+4904	YBX1	diamond	30	2.7743732144128343e-09	236	none	False		False	3	39	0.01655155292107369	0.4405594405594406	0.18124757621868584	0.6423751686909581	30	True	False	hub non-bottleneck	Translation & protein folding
+7001	PRDX2	diamond	8	3.5182322729987015e-10	33	none	False		False	1	12	0.0154338456498559	0.42663656884875845	0.008879850531451955	0.45454545454545453	9	False	False	peripheral	APP processing & amyloid
+11140	CDC37	diamond	12	6.066563328015411e-11	137	none	False		False	1	23	0.015421674392528017	0.4587378640776699	0.015540991450100468	0.33201581027667987	9	False	False	peripheral	APP processing & amyloid
+3416	IDE	seed	0	1.0	12	none	False		True	4	5	0.014836166348497184	0.38414634146341464	0.00295332498907196	0.1	3	False	False	peripheral	Growth factor & IGF signalling
+4311	MME	seed	0	1.0	151	none	False		True	3	32	0.014496859892783149	0.4108695652173913	0.17208044970678396	0.8770161290322581	30	True	False	hub non-bottleneck	Translation & protein folding
+596	BCL2	seed	0	1.0	110	none	False		True	2	20	0.014465885925771959	0.4153846153846154	0.0189612222828897	0.24736842105263157	9	False	False	peripheral	Apoptosis & neuronal death
+2932	GSK3B	seed	0	1.0	243	none	False		True	2	16	0.014006397223705254	0.45652173913043476	0.03305346012863459	0.3416666666666667	9	False	False	peripheral	Apoptosis & neuronal death
+857	CAV1	seed	0	1.0	113	none	False		False	2	13	0.013677981369964266	0.43448275862068964	0.011728740751450991	0.11538461538461539	5	False	False	peripheral	Apoptosis & neuronal death
+4846	NOS3	seed	0	1.0	54	none	False		True	1	18	0.013139239117714184	0.4609756097560976	0.018712831947856574	0.3660130718954248	9	False	False	peripheral	APP processing & amyloid
+5582	PRKCG	seed	0	1.0	63	none	False		False	5	5	0.01301698533270501	0.41814159292035397	0.009470709000831766	0.3	3	False	False	peripheral	Glutamatergic synapse
+4137	MAPT	seed	0	1.0	75	none	False		True	2	16	0.012968942935717044	0.441588785046729	0.011482112020889322	0.225	8	False	False	peripheral	Apoptosis & neuronal death
+7018	TF	seed	0	1.0	39	none	False		True	4	5	0.012910826269580941	0.34870848708487084	0.003994790510134216	0.0	3	False	False	peripheral	Growth factor & IGF signalling
+3480	IGF1R	seed	0	1.0	71	none	False		True	4	8	0.012781318937762557	0.43249427917620137	0.018868213954111326	0.25	5	False	False	peripheral	Growth factor & IGF signalling
+2023	ENO1	seed	0	1.0	135	none	False		False	3	33	0.01229871848792724	0.4144736842105263	0.1757789979530863	0.8579545454545454	30	True	False	hub non-bottleneck	Translation & protein folding
+578	BAK1	diamond	24	1.5765508853564878e-09	25	none	False		False	2	10	0.01211915422595962	0.3720472440944882	0.02082037477503681	0.4222222222222222	8	False	False	peripheral	Apoptosis & neuronal death
+5599	MAPK8	seed	0	1.0	162	none	False		True	2	12	0.011714169233789446	0.44366197183098594	0.01425251445666977	0.3333333333333333	9	False	False	peripheral	Apoptosis & neuronal death
+348	APOE	seed	0	1.0	56	none	False		False	1	22	0.01120119920237366	0.4276018099547511	0.008381948930033587	0.36796536796536794	9	False	False	peripheral	APP processing & amyloid
+7161	TP73	seed	0	1.0	101	none	False		False	2	5	0.010796699932506799	0.35195530726256985	0.007521244517247092	0.3	4	False	False	peripheral	Apoptosis & neuronal death
+5328	PLAU	seed	0	1.0	25	none	False		True	4	3	0.01075709738745875	0.2898773006134969	0.0001461122722598378	0.0	2	False	False	peripheral	Growth factor & IGF signalling
+3952	LEP	seed	0	1.0	11	none	False		False	2	3	0.010677377801744053	0.3247422680412371	0.0008013878366961624	0.0	2	False	False	peripheral	Apoptosis & neuronal death
+1234	CCR5	seed	0	1.0	49	none	False		True	2	3	0.010668807843599746	0.30288461538461536	0.006037562112241852	0.0	2	False	False	peripheral	Apoptosis & neuronal death
+23621	BACE1	seed	0	1.0	22	none	False		False	1	5	0.010659865942883406	0.38809034907597534	0.0036905636068956965	0.4	4	False	False	peripheral	APP processing & amyloid
+12	SERPINA3	seed	0	1.0	27	none	False		False	1	3	0.010582010582010583	0.3795180722891566	0.0030852558522064012	0.3333333333333333	2	False	False	peripheral	APP processing & amyloid
+1137	CHRNA4	seed	0	1.0	7	none	True	Galantamine	True	1	2	0.010582010582010583	0.28810975609756095	0.0001399979657744658	0.0	1	False	False	peripheral	APP processing & amyloid
+2898	GRIK2	seed	0	1.0	19	none	False		True	5	2	0.010582010582010583	0.28335832083958024	0.00012192478381214353	0.0	1	False	False	peripheral	Glutamatergic synapse
+7417	VDAC2	diamond	31	3.0642020545536933e-10	83	none	False		True	3	32	0.009439008399256802	0.46551724137931033	0.17497330903470582	0.9012096774193549	30	True	False	hub non-bottleneck	Translation & protein folding
+1410	CRYAB	seed	0	1.0	53	none	False		False	2	9	0.008903043088587897	0.4209354120267261	0.0071829880006583895	0.2222222222222222	6	False	False	peripheral	Apoptosis & neuronal death
+6204	RPS10	diamond	33	8.272257741312948e-12	109	none	False		False	3	33	0.00808494442218817	0.4748743718592965	0.1788579236364395	0.8825757575757576	30	True	False	hub non-bottleneck	Translation & protein folding
+5300	PIN1	seed	0	1.0	165	none	False		False	2	8	0.008035635389122343	0.41629955947136565	0.006095675486027212	0.17857142857142858	5	False	False	peripheral	Apoptosis & neuronal death
+5536	PPP5C	seed	0	1.0	34	none	False		False	5	6	0.007620328010655825	0.42857142857142855	0.0134034470028873	0.3333333333333333	5	False	False	peripheral	Glutamatergic synapse
+4851	NOTCH1	seed	0	1.0	66	none	False		False	1	7	0.007338950156669402	0.3539325842696629	0.0032189844858314088	0.23809523809523808	5	False	False	peripheral	APP processing & amyloid
+498	ATP5A1	seed	0	1.0	107	none	False		False	3	32	0.0072122777714470655	0.4643734643734644	0.17492406182173179	0.9012096774193549	30	True	False	hub non-bottleneck	Translation & protein folding
+22983	MAST1	diamond	2	2.0090393442140656e-08	37	none	False		True	1	23	0.006742433434205775	0.4247191011235955	0.008141731067046791	0.4031620553359684	9	False	False	peripheral	APP processing & amyloid
+1020	CDK5	seed	0	1.0	80	down	False		False	1	9	0.006453580070341797	0.43249427917620137	0.009384456860454473	0.2777777777777778	8	False	False	peripheral	APP processing & amyloid
+4035	LRP1	seed	0	1.0	77	none	False		False	1	10	0.006453031758553896	0.4315068493150685	0.01010880668741884	0.2222222222222222	5	False	False	peripheral	APP processing & amyloid
+140545	RNF32	diamond	3	2.3026758286125154e-09	41	none	False		False	1	23	0.006432229113602539	0.42376681614349776	0.008444754674525767	0.44664031620553357	9	False	False	peripheral	APP processing & amyloid
+51295	ECSIT	diamond	5	1.340033140323383e-10	42	none	False		False	1	22	0.006429948633775762	0.4190687361419069	0.00805297333317996	0.45454545454545453	9	False	False	peripheral	APP processing & amyloid
+6206	RPS12	diamond	32	2.7769981811762748e-11	84	none	False		False	3	32	0.00563420351729138	0.4701492537313433	0.17782069098902747	0.9314516129032258	30	True	False	hub non-bottleneck	Translation & protein folding
+6223	RPS19	diamond	38	4.394116726576533e-17	99	none	False		False	3	32	0.00563420351729138	0.4701492537313433	0.17782069098902736	0.9314516129032258	30	True	False	hub non-bottleneck	Translation & protein folding
+581	BAX	seed	0	1.0	37	up	False		False	2	14	0.005408772117156688	0.38571428571428573	0.018673195737460888	0.4175824175824176	9	False	False	peripheral	Apoptosis & neuronal death
+572	BAD	diamond	19	2.538164530219917e-08	49	none	False		False	2	12	0.00526749798692159	0.3713163064833006	0.006323665188111425	0.3787878787878788	9	False	False	peripheral	Apoptosis & neuronal death
+7133	TNFRSF1B	seed	0	1.0	111	none	False		False	2	7	0.0052605931424914735	0.361376673040153	0.01925222305784921	0.19047619047619047	5	False	False	peripheral	Apoptosis & neuronal death
+22976	PAXIP1	seed	0	1.0	233	none	False		False	1	11	0.0050679542203156845	0.4305239179954442	0.022447564185452597	0.34545454545454546	9	False	False	peripheral	APP processing & amyloid
+1933	EEF1B2	diamond	47	2.6221359915304567e-27	100	none	False		False	3	31	0.00497405107710777	0.4621026894865526	0.1743194530209637	0.956989247311828	30	False	False	peripheral	Translation & protein folding
+10480	EIF3M	diamond	37	6.542025045913847e-16	85	none	False		False	3	31	0.00497405107710777	0.4621026894865526	0.1743194530209637	0.956989247311828	30	False	False	peripheral	Translation & protein folding
+10971	YWHAQ	seed	0	1.0	196	none	False		False	2	5	0.004614886600675669	0.328125	0.005071852736745199	0.1	4	False	False	peripheral	Apoptosis & neuronal death
+3337	DNAJB1	diamond	18	1.3522568925616604e-08	46	none	False		False	1	9	0.004302228509644112	0.4117647058823529	0.005891978608129509	0.4722222222222222	8	False	False	peripheral	APP processing & amyloid
+1385	CREB1	seed	0	1.0	178	none	False		True	2	8	0.004261542444509956	0.4375	0.01816575042164958	0.39285714285714285	7	False	False	peripheral	Apoptosis & neuronal death
+4170	MCL1	diamond	1	1.0065545119812353e-09	38	none	False		False	2	15	0.004033822899862371	0.3825910931174089	0.018113504124212813	0.3047619047619048	9	False	False	peripheral	Apoptosis & neuronal death
+8668	EIF3I	diamond	50	8.328849253266126e-31	126	none	False		False	3	33	0.0038961837180831664	0.41814159292035397	0.17612371883499675	0.8598484848484849	30	True	False	hub non-bottleneck	Translation & protein folding
+5621	PRNP	seed	0	1.0	82	none	False		True	1	9	0.0038035741219717596	0.42857142857142855	0.010340410811893441	0.3333333333333333	5	False	False	peripheral	APP processing & amyloid
+10018	BCL2L11	diamond	21	9.506790483581727e-09	31	none	False		False	2	10	0.0036820992653790745	0.43448275862068964	0.018376658978797377	0.5333333333333333	9	False	False	peripheral	Apoptosis & neuronal death
+9361	LONP1	diamond	11	1.5248126874803937e-11	24	none	False		False	1	11	0.0034527003498624627	0.362763915547025	0.00803109095707569	0.6909090909090909	9	False	False	peripheral	APP processing & amyloid
+4804	NGFR	seed	0	1.0	55	none	False		False	4	5	0.003331350222097396	0.391304347826087	0.003689540044366962	0.2	3	False	False	peripheral	Growth factor & IGF signalling
+322	APBB1	seed	0	1.0	32	down	False		False	1	9	0.0032638587577195665	0.391304347826087	0.004591528065966407	0.4166666666666667	5	False	False	peripheral	APP processing & amyloid
+23385	NCSTN	seed	0	1.0	22	none	False		False	1	8	0.003263550302570135	0.39293139293139295	0.003915572351496068	0.5714285714285714	5	False	False	peripheral	APP processing & amyloid
+10017	BCL2L10	diamond	25	7.516316305220261e-10	9	none	False		False	2	6	0.0019513658399440818	0.3387096774193548	0.0026768693937240444	0.6	5	False	False	peripheral	Apoptosis & neuronal death
+6647	SOD1	seed	0	1.0	24	none	False		True	2	5	0.0019339409565549935	0.37058823529411766	0.007241416865221816	0.2	4	False	False	peripheral	Apoptosis & neuronal death
+54536	EXOC6	diamond	7	5.959930516008292e-11	19	none	False		False	1	11	0.0019221299286264404	0.4012738853503185	0.00512150459102812	0.6181818181818182	8	False	False	peripheral	APP processing & amyloid
+5610	EIF2AK2	seed	0	1.0	58	up	False		False	2	4	0.001894250304837945	0.36627906976744184	0.00785446589746443	0.3333333333333333	3	False	False	peripheral	Apoptosis & neuronal death
+9846	GAB2	seed	0	1.0	36	none	False		False	4	3	0.0018152611740655659	0.3275563258232236	0.0013023469189239576	0.0	2	False	False	peripheral	Growth factor & IGF signalling
+627	BDNF	seed	0	1.0	16	none	False		False	4	4	0.0017797148033688783	0.40384615384615385	0.0071862543640076725	0.3333333333333333	3	False	False	peripheral	Growth factor & IGF signalling
+6285	S100B	seed	0	1.0	34	none	False		True	2	6	0.0016072760814506174	0.3684210526315789	0.008742705603014116	0.06666666666666667	5	False	False	peripheral	Apoptosis & neuronal death
+4843	NOS2	seed	0	1.0	153	none	False		True	2	6	0.0015401691606238032	0.3698630136986301	0.01967468964176466	0.3333333333333333	5	False	False	peripheral	Apoptosis & neuronal death
+1827	RCAN1	seed	0	1.0	10	none	False		False	1	2	0.0015080800655591785	0.3825910931174089	0.0028511294375331057	0.0	2	False	False	peripheral	APP processing & amyloid
+8344	HIST1H2BE	diamond	36	1.0396793041411279e-14	99	none	False		False	3	32	0.001463058278511063	0.4144736842105263	0.1757234197219556	0.9133064516129032	30	True	False	hub non-bottleneck	Translation & protein folding
+3437	IFIT3	diamond	10	5.035440941369525e-11	27	none	False		False	1	11	0.0014409030353316574	0.4004237288135593	0.005468087833264035	0.8	9	False	False	peripheral	APP processing & amyloid
+4803	NGF	seed	0	1.0	13	none	False		True	4	4	0.0014079457274343721	0.3375	0.0008532790373225366	0.0	3	False	False	peripheral	Growth factor & IGF signalling
+2670	GFAP	seed	0	1.0	49	none	False		False	2	5	0.001388033304349619	0.4153846153846154	0.009607878784086166	0.4	5	False	False	peripheral	Apoptosis & neuronal death
+6146	RPL22	diamond	40	5.817955183913015e-19	105	none	False		False	3	32	0.0013456266815009862	0.41721854304635764	0.1763400395564256	0.9213709677419355	30	True	False	hub non-bottleneck	Translation & protein folding
+3921	RPSA	diamond	43	2.0636152927276744e-22	108	none	False		False	3	32	0.0013456266815009862	0.41721854304635764	0.17634003955642555	0.9213709677419355	30	True	False	hub non-bottleneck	Translation & protein folding
+5530	PPP3CA	seed	0	1.0	37	none	False		True	2	6	0.001310218766814361	0.34363636363636363	0.0029878081858218082	0.2	4	False	False	peripheral	Apoptosis & neuronal death
+3482	IGF2R	seed	0	1.0	21	none	False		False	4	3	0.0012118106335894238	0.3019169329073482	0.00042961021226830653	0.0	2	False	False	peripheral	Growth factor & IGF signalling
+3630	INS	seed	0	1.0	23	none	False		False	4	6	0.0011515319520570167	0.39789473684210525	0.0042239771167671926	0.4	5	False	False	peripheral	Growth factor & IGF signalling
+2904	GRIN2B	seed	0	1.0	49	none	True	Memantine	True	5	3	0.001088898064283963	0.3375	0.006211592867097386	0.0	3	False	False	peripheral	Glutamatergic synapse
+177	AGER	seed	0	1.0	11	none	False		False	4	3	0.0010360975108576276	0.38571428571428573	0.0033545417788478876	0.3333333333333333	3	False	False	peripheral	Growth factor & IGF signalling
+2931	GSK3A	seed	0	1.0	40	none	False		True	2	6	0.0010297201837296318	0.4315068493150685	0.01125353928317922	0.4666666666666667	5	False	False	peripheral	Apoptosis & neuronal death
+3481	IGF2	seed	0	1.0	22	none	False		False	4	4	0.000992305118733779	0.3113673805601318	0.0008509681660867536	0.0	3	False	False	peripheral	Growth factor & IGF signalling
+8663	EIF3C	diamond	46	4.5208620263705473e-26	99	none	False		False	3	31	0.00096730247063409	0.4055793991416309	0.17283880158836187	0.9440860215053763	30	False	False	peripheral	Translation & protein folding
+54850	FBXL12	diamond	15	9.168413425208168e-09	21	none	False		False	1	8	0.0009173930995661951	0.39293139293139295	0.008417150539065074	0.6428571428571429	8	False	False	peripheral	APP processing & amyloid
+333	APLP1	seed	0	1.0	54	none	False		False	1	7	0.0008715914052148927	0.4228187919463087	0.010732452369433577	0.47619047619047616	5	False	False	peripheral	APP processing & amyloid
+5468	PPARG	seed	0	1.0	64	none	False		True	2	5	0.0007985905016235883	0.3333333333333333	0.0016320380628957896	0.1	4	False	False	peripheral	Apoptosis & neuronal death
+10891	PPARGC1A	seed	0	1.0	52	none	False		False	2	4	0.0007738460125963182	0.3572778827977316	0.005810223474304102	0.3333333333333333	4	False	False	peripheral	Apoptosis & neuronal death
+3479	IGF1	seed	0	1.0	16	none	False		False	4	4	0.0007594266078241976	0.3176470588235294	0.0009690684641245836	0.0	3	False	False	peripheral	Growth factor & IGF signalling
+334	APLP2	seed	0	1.0	25	none	False		False	1	6	0.0006521326977158618	0.3945720250521921	0.0047731014463208606	0.5333333333333333	5	False	False	peripheral	APP processing & amyloid
+43	ACHE	seed	0	1.0	12	none	True	Donepezil; Galantamine; Rivastigmine	True	1	3	0.0005547807703307853	0.40384615384615385	0.014236241150463111	0.3333333333333333	3	False	False	peripheral	APP processing & amyloid
+5524	PPP2R4	seed	0	1.0	35	none	False		False	2	5	0.00044694718776202414	0.4108695652173913	0.005214009086975333	0.4	5	False	False	peripheral	Apoptosis & neuronal death
+3635	INPP5D	seed	0	1.0	43	none	False		False	4	2	0.00043412892534810786	0.2985781990521327	0.0056215644155062664	0.0	2	False	False	peripheral	Growth factor & IGF signalling
+642	BLMH	seed	0	1.0	18	none	False		True	1	5	0.0004267101866445775	0.384928716904277	0.0036323052896574336	0.9	5	False	False	peripheral	APP processing & amyloid
+4915	NTRK2	seed	0	1.0	31	none	False		True	4	3	0.0003951415188988463	0.35064935064935066	0.006492851711023536	0.0	3	False	False	peripheral	Growth factor & IGF signalling
+8662	EIF3B	diamond	42	2.4374360976033647e-21	94	none	False		False	3	31	0.00037832421086689657	0.4126637554585153	0.175152931184373	0.9720430107526882	30	False	False	peripheral	Translation & protein folding
+7419	VDAC3	diamond	34	6.821603308916668e-13	78	none	False		True	3	31	0.00037832421086689657	0.4126637554585153	0.175152931184373	0.9720430107526882	30	False	False	peripheral	Translation & protein folding
+4637	MYL6	diamond	48	1.4898166080871917e-28	101	none	False		False	3	31	0.00037832421086689657	0.4126637554585153	0.175152931184373	0.9720430107526882	30	False	False	peripheral	Translation & protein folding
+6229	RPS24	diamond	41	3.757917204415487e-20	93	none	False		False	3	31	0.00037832421086689657	0.4126637554585153	0.17515293118437297	0.9720430107526882	30	False	False	peripheral	Translation & protein folding
+24138	IFIT5	diamond	9	1.2952460623885298e-09	17	none	False		False	1	10	0.00028995635353366595	0.35261194029850745	0.0030025149911422997	0.8222222222222222	9	False	False	peripheral	APP processing & amyloid
+1795	DOCK3	seed	0	1.0	14	none	False		False	2	3	0.00028571064121758044	0.33810375670840787	0.0019471720156724113	0.3333333333333333	3	False	False	peripheral	Apoptosis & neuronal death
+10979	FERMT2	seed	0	1.0	6	none	False		False	4	2	0.00028182822931671235	0.39957716701902746	0.006369014262435476	0.0	2	False	False	peripheral	Growth factor & IGF signalling
+1558	CYP2C8	diamond	6	2.2600456734956386e-09	11	down	False		True	1	10	0.0002639192722382708	0.33157894736842103	0.002441723105713417	0.6666666666666666	8	False	False	peripheral	APP processing & amyloid
+2639	GCDH	diamond	4	9.926246557551309e-11	13	none	False		True	1	10	0.00024997978175852884	0.3572778827977316	0.003527417613852429	0.7111111111111111	9	False	False	peripheral	APP processing & amyloid
+9445	ITM2B	seed	0	1.0	8	none	False		False	1	2	0.00024174669145284573	0.391304347826087	0.003369033047520851	0.0	2	False	False	peripheral	APP processing & amyloid
+5366	PMAIP1	diamond	22	1.3395414657097541e-08	13	none	False		False	2	6	0.00020113841573633561	0.3387096774193548	0.0039048956733744086	0.6	6	False	False	peripheral	Apoptosis & neuronal death
+4208	MEF2C	seed	0	1.0	64	none	False		False	2	2	0.00018969131714463968	0.28	0.000268812572021225	0.0	2	False	False	peripheral	Apoptosis & neuronal death
+7040	TGFB1	seed	0	1.0	58	none	False		False	1	2	0.0001805819198773045	0.39957716701902746	0.008464689106043834	0.0	2	False	False	peripheral	APP processing & amyloid
+23435	TARDBP	seed	0	1.0	31	none	False		False	1	3	0.00016841514646310325	0.384928716904277	0.003621920982380033	0.6666666666666666	3	False	False	peripheral	APP processing & amyloid
+120892	LRRK2	seed	0	1.0	40	none	False		True	2	5	0.00015910956250373752	0.3757455268389662	0.014785581046788262	0.6	5	False	False	peripheral	Apoptosis & neuronal death
+3356	HTR2A	seed	0	1.0	19	none	True	Donepezil	True	5	2	0.00015055582431468958	0.30781758957654726	0.0005563745637260799	0.0	2	False	False	peripheral	Glutamatergic synapse
+5743	PTGS2	seed	0	1.0	6	none	False		True	2	2	0.00013780725322434204	0.3275563258232236	0.0014511418886112176	0.0	2	False	False	peripheral	Apoptosis & neuronal death
+7422	VEGFA	seed	0	1.0	23	none	False		True	2	3	0.00011727478111515357	0.35261194029850745	0.007201869968301173	0.3333333333333333	3	False	False	peripheral	Apoptosis & neuronal death
+84106	PRAM1	diamond	16	9.49609435808117e-09	21	none	False		False	1	7	9.827353264359633e-05	0.39622641509433965	0.00500393953642245	0.8095238095238095	7	False	False	peripheral	APP processing & amyloid
+267	AMFR	seed	0	1.0	36	none	False		False	2	2	6.473038387932004e-05	0.3345132743362832	0.006122365638084929	0.0	2	False	False	peripheral	Apoptosis & neuronal death
+51013	EXOSC1	diamond	17	1.0712405052141383e-08	32	none	False		False	1	8	4.374989614691415e-05	0.3945720250521921	0.005288332914476963	0.8571428571428571	8	False	False	peripheral	APP processing & amyloid
+84171	LOXL4	diamond	13	2.7256183872899643e-11	11	none	False		False	1	7	3.394809045512776e-05	0.328125	0.0020009760285555384	0.8095238095238095	7	False	False	peripheral	APP processing & amyloid
+55851	PSENEN	seed	0	1.0	9	none	False		False	1	5	1.7347018715688618e-05	0.32642487046632124	0.0010308207961415238	0.9	5	False	False	peripheral	APP processing & amyloid
+51107	APH1A	seed	0	1.0	16	none	False		False	1	5	1.7347018715688618e-05	0.32642487046632124	0.0010308207961414759	0.9	5	False	False	peripheral	APP processing & amyloid
+1995	ELAVL3	diamond	14	5.405072861329372e-10	9	none	False		False	1	6	1.1638083533508369e-05	0.33689839572192515	0.0023680229583547133	0.8666666666666667	6	False	False	peripheral	APP processing & amyloid
+6532	SLC6A4	seed	0	1.0	8	none	False		True	2	2	8.701416862584502e-06	0.34177215189873417	0.0071696414700979615	0.0	2	False	False	peripheral	Apoptosis & neuronal death
+347	APOD	seed	0	1.0	14	none	False		False	4	1	0.0	0.3103448275862069	0.003614758081676693	0.0	1	False	False	peripheral	Growth factor & IGF signalling
+323	APBB2	seed	0	1.0	5	none	False		False	1	2	0.0	0.3772455089820359	0.0029090137332059255	1.0	2	False	False	peripheral	APP processing & amyloid
+274	BIN1	seed	0	1.0	40	none	False		False	2	1	0.0	0.26068965517241377	0.00024386018314001402	0.0	1	False	False	peripheral	Apoptosis & neuronal death
+25825	BACE2	seed	0	1.0	3	up	False		False	1	1	0.0	0.37649402390438247	0.0027542561807587804	0.0	1	False	False	peripheral	APP processing & amyloid
+762	CA4	seed	0	1.0	5	none	False		True	1	1	0.0	0.29952456418383516	0.0002879100622098607	0.0	1	False	False	peripheral	APP processing & amyloid
+6347	CCL2	seed	0	1.0	26	none	False		True	2	1	0.0	0.23275862068965517	0.00019575497100706482	0.0	1	False	False	peripheral	Apoptosis & neuronal death
+9507	ADAMTS4	seed	0	1.0	12	none	False		False	1	1	0.0	0.2755102040816326	0.00010003278784881038	0.0	1	False	False	peripheral	APP processing & amyloid
+1627	DBN1	seed	0	1.0	25	none	False		False	2	1	0.0	0.27155172413793105	0.0006750558892271377	0.0	1	False	False	peripheral	Apoptosis & neuronal death
+1139	CHRNA7	seed	0	1.0	5	none	True	Galantamine	True	1	1	0.0	0.37649402390438247	0.0027542561807587804	0.0	1	False	False	peripheral	APP processing & amyloid
+1141	CHRNB2	seed	0	1.0	4	none	True	Galantamine	True	1	1	0.0	0.22393364928909953	4.539133051002318e-06	0.0	1	False	False	peripheral	APP processing & amyloid
+10658	CELF1	seed	0	1.0	11	up	False		False	1	1	0.0	0.37649402390438247	0.0027542561807587804	0.0	1	False	False	peripheral	APP processing & amyloid
+1103	CHAT	seed	0	1.0	9	none	False		True	5	1	0.0	0.2953125	0.00030706737776083575	0.0	1	False	False	peripheral	Glutamatergic synapse
+1718	DHCR24	seed	0	1.0	2	none	False		False	2	1	0.0	0.2921174652241113	0.0010708626860016193	0.0	1	False	False	peripheral	Apoptosis & neuronal death
+1471	CST3	seed	0	1.0	10	none	False		False	4	2	0.0	0.30434782608695654	0.0005293115082605515	1.0	2	False	False	peripheral	Growth factor & IGF signalling
+23607	CD2AP	seed	0	1.0	43	up	False		False	2	1	0.0	0.274310595065312	0.00044715396590136485	0.0	1	False	False	peripheral	Apoptosis & neuronal death
+945	CD33	seed	0	1.0	12	none	False		False	2	1	0.0	0.24545454545454545	2.5983277657660642e-05	0.0	1	False	False	peripheral	Apoptosis & neuronal death
+2890	GRIA1	seed	0	1.0	28	none	False		True	5	1	0.0	0.22105263157894736	3.953148982388313e-06	0.0	1	False	False	peripheral	Glutamatergic synapse
+2897	GRIK1	seed	0	1.0	6	none	False		True	5	1	0.0	0.2825112107623318	0.000121796611455443	0.0	1	False	False	peripheral	Glutamatergic synapse
+26330	GAPDHS	seed	0	1.0	5	none	False		False	1	1	0.0	0.37649402390438247	0.0027542561807587804	0.0	1	False	False	peripheral	APP processing & amyloid
+169792	GLIS3	seed	0	1.0	2	none	False		False	3	1	0.0	0.29347826086956524	0.0056992560918232345	0.0	1	False	False	peripheral	Translation & protein folding
+2041	EPHA1	seed	0	1.0	5	none	False		False	3	1	0.0	0.3448905109489051	0.006140227459792477	0.0	1	False	False	peripheral	Translation & protein folding
+1965	EIF2S1	seed	0	1.0	35	none	False		False	2	2	0.0	0.3165829145728643	0.0008698373167674262	1.0	2	False	False	peripheral	Apoptosis & neuronal death
+2147	F2	seed	0	1.0	44	none	False		True	4	1	0.0	0.225	4.737376293314113e-06	0.0	1	False	False	peripheral	Growth factor & IGF signalling
+10313	RTN3	seed	0	1.0	21	none	False		False	1	1	0.0	0.28	0.0001196585904106775	0.0	1	False	False	peripheral	APP processing & amyloid
+3553	IL1B	seed	0	1.0	26	none	False		True	1	2	0.0	0.384928716904277	0.0032127910727994856	1.0	2	False	False	peripheral	APP processing & amyloid
+3600	IL15	seed	0	1.0	8	none	False		False	1	1	0.0	0.37649402390438247	0.0027542561807587804	0.0	1	False	False	peripheral	APP processing & amyloid
+3028	HSD17B10	seed	0	1.0	19	none	False		False	1	1	0.0	0.37649402390438247	0.0027542561807587804	0.0	1	False	False	peripheral	APP processing & amyloid
+3375	IAPP	seed	0	1.0	7	none	False		False	4	1	0.0	0.27794117647058825	9.575521325701512e-05	0.0	1	False	False	peripheral	Growth factor & IGF signalling
+4133	MAP2	seed	0	1.0	31	none	False		True	1	2	0.0	0.38181818181818183	0.0030260228540082558	1.0	2	False	False	peripheral	APP processing & amyloid
+4023	LPL	seed	0	1.0	18	none	False		True	1	2	0.0	0.378	0.0030820125041263616	1.0	2	False	False	peripheral	APP processing & amyloid
+5653	KLK6	seed	0	1.0	13	none	False		False	2	2	0.0	0.38969072164948454	0.0040473346659645314	1.0	2	False	False	peripheral	Apoptosis & neuronal death
+4504	MT3	seed	0	1.0	2	none	False		True	4	1	0.0	0.2990506329113924	0.0003168221653285123	0.0	1	False	False	peripheral	Growth factor & IGF signalling
+3162	HMOX1	seed	0	1.0	13	none	False		True	2	1	0.0	0.3219761499148211	0.00109241404058324	0.0	1	False	False	peripheral	Apoptosis & neuronal death
+8301	PICALM	seed	0	1.0	11	none	False		False	2	1	0.0	0.3118811881188119	0.0006151731467845301	0.0	1	False	False	peripheral	Apoptosis & neuronal death
+51314	NME8	seed	0	1.0	1	none	False		False	1	1	0.0	0.37649402390438247	0.0027542561807587804	0.0	1	False	False	peripheral	APP processing & amyloid
+4852	NPY	seed	0	1.0	17	none	False		False	1	1	0.0	0.2872340425531915	0.0001398507941441663	0.0	1	False	False	peripheral	APP processing & amyloid
+5252	PHF1	seed	0	1.0	25	none	False		False	2	1	0.0	0.2921174652241113	0.0010708626860016193	0.0	1	False	False	peripheral	Apoptosis & neuronal death
+5444	PON1	seed	0	1.0	3	none	False		True	2	1	0.0	0.30095541401273884	0.00034201049274023833	0.0	1	False	False	peripheral	Apoptosis & neuronal death
+23646	PLD3	seed	0	1.0	6	none	False		False	2	1	0.0	0.29256965944272445	0.00043671637018663853	0.0	1	False	False	peripheral	Apoptosis & neuronal death
+3077	HFE	seed	0	1.0	5	none	False		False	4	1	0.0	0.2589041095890411	0.00012952249367417844	0.0	1	False	False	peripheral	Growth factor & IGF signalling
+27335	EIF3K	diamond	44	8.993812908189037e-24	85	none	False		False	3	30	0.0	0.4012738853503185	0.17165169321630927	1.0	30	False	False	peripheral	Translation & protein folding
+10202	DHRS2	diamond	35	1.3431858681225533e-13	70	none	False		False	3	30	0.0	0.4012738853503185	0.17165169321630935	1.0	30	False	False	peripheral	Translation & protein folding
+7167	TPI1	seed	0	1.0	21	none	False		False	1	1	0.0	0.37649402390438247	0.0027542561807587804	0.0	1	False	False	peripheral	APP processing & amyloid
+28951	TRIB2	seed	0	1.0	3	none	False		False	1	1	0.0	0.37649402390438247	0.0027542561807587804	0.0	1	False	False	peripheral	APP processing & amyloid
+10452	TOMM40	seed	0	1.0	7	none	False		False	3	1	0.0	0.3024	0.005835898602195918	0.0	1	False	False	peripheral	Translation & protein folding
+7124	TNF	seed	0	1.0	40	none	False		True	2	2	0.0	0.2971698113207547	0.0018498097500394127	1.0	2	False	False	peripheral	Apoptosis & neuronal death
+10056	FARSB	diamond	39	3.0680689592206752e-18	75	none	False		True	3	30	0.0	0.4012738853503185	0.17165169321630933	1.0	30	False	False	peripheral	Translation & protein folding
+3842	TNPO1	diamond	49	5.442954788769411e-30	91	none	False		False	3	30	0.0	0.4012738853503185	0.17165169321630933	1.0	30	False	False	peripheral	Translation & protein folding

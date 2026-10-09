@@ -1,0 +1,227 @@
+{
+  "title": "Alzheimer PPI",
+  "defaults": [
+    {
+      "visualProperty": "NETWORK_BACKGROUND_PAINT",
+      "value": "#fcfcfb"
+    },
+    {
+      "visualProperty": "NODE_SHAPE",
+      "value": "ELLIPSE"
+    },
+    {
+      "visualProperty": "NODE_SIZE",
+      "value": 28
+    },
+    {
+      "visualProperty": "NODE_FILL_COLOR",
+      "value": "#c3c2b7"
+    },
+    {
+      "visualProperty": "NODE_BORDER_PAINT",
+      "value": "#fcfcfb"
+    },
+    {
+      "visualProperty": "NODE_BORDER_WIDTH",
+      "value": 1.5
+    },
+    {
+      "visualProperty": "NODE_LABEL_COLOR",
+      "value": "#0b0b0b"
+    },
+    {
+      "visualProperty": "NODE_LABEL_FONT_SIZE",
+      "value": 18
+    },
+    {
+      "visualProperty": "NODE_LABEL_FONT_FACE",
+      "value": "SansSerif.bold,Font.BOLD,18"
+    },
+    {
+      "visualProperty": "NODE_TRANSPARENCY",
+      "value": 235
+    },
+    {
+      "visualProperty": "EDGE_STROKE_UNSELECTED_PAINT",
+      "value": "#898781"
+    },
+    {
+      "visualProperty": "EDGE_WIDTH",
+      "value": 0.8
+    },
+    {
+      "visualProperty": "EDGE_TRANSPARENCY",
+      "value": 60
+    }
+  ],
+  "mappings": [
+    {
+      "mappingType": "discrete",
+      "mappingColumn": "cluster",
+      "mappingColumnType": "Integer",
+      "visualProperty": "NODE_FILL_COLOR",
+      "map": [
+        {
+          "key": "1",
+          "value": "#2a78d6"
+        },
+        {
+          "key": "2",
+          "value": "#eb6834"
+        },
+        {
+          "key": "3",
+          "value": "#1baf7a"
+        },
+        {
+          "key": "4",
+          "value": "#eda100"
+        },
+        {
+          "key": "5",
+          "value": "#e87ba4"
+        }
+      ]
+    },
+    {
+      "mappingType": "discrete",
+      "mappingColumn": "role",
+      "mappingColumnType": "String",
+      "visualProperty": "NODE_SHAPE",
+      "map": [
+        {
+          "key": "seed",
+          "value": "ELLIPSE"
+        },
+        {
+          "key": "diamond",
+          "value": "DIAMOND"
+        }
+      ]
+    },
+    {
+      "mappingType": "continuous",
+      "mappingColumn": "betweenness",
+      "mappingColumnType": "Double",
+      "visualProperty": "NODE_SIZE",
+      "points": [
+        {
+          "value": 0.0,
+          "lesser": "18",
+          "equal": "18",
+          "greater": "18"
+        },
+        {
+          "value": 0.0039875551493005834,
+          "lesser": "30",
+          "equal": "30",
+          "greater": "30"
+        },
+        {
+          "value": 0.019937775746502916,
+          "lesser": "55",
+          "equal": "55",
+          "greater": "55"
+        },
+        {
+          "value": 0.03987555149300583,
+          "lesser": "80",
+          "equal": "80",
+          "greater": "80"
+        }
+      ]
+    },
+    {
+      "mappingType": "discrete",
+      "mappingColumn": "drug_status",
+      "mappingColumnType": "String",
+      "visualProperty": "NODE_BORDER_PAINT",
+      "map": [
+        {
+          "key": "AD drug target",
+          "value": "#d03b3b"
+        },
+        {
+          "key": "druggable",
+          "value": "#52514e"
+        },
+        {
+          "key": "none",
+          "value": "#fcfcfb"
+        }
+      ]
+    },
+    {
+      "mappingType": "discrete",
+      "mappingColumn": "drug_status",
+      "mappingColumnType": "String",
+      "visualProperty": "NODE_BORDER_WIDTH",
+      "map": [
+        {
+          "key": "AD drug target",
+          "value": "7.0"
+        },
+        {
+          "key": "druggable",
+          "value": "3.0"
+        },
+        {
+          "key": "none",
+          "value": "1.5"
+        }
+      ]
+    },
+    {
+      "mappingType": "passthrough",
+      "mappingColumn": "label",
+      "mappingColumnType": "String",
+      "visualProperty": "NODE_LABEL"
+    },
+    {
+      "mappingType": "passthrough",
+      "mappingColumn": "tooltip",
+      "mappingColumnType": "String",
+      "visualProperty": "NODE_TOOLTIP"
+    },
+    {
+      "mappingType": "discrete",
+      "mappingColumn": "edge_type",
+      "mappingColumnType": "String",
+      "visualProperty": "EDGE_TRANSPARENCY",
+      "map": [
+        {
+          "key": "seed-seed",
+          "value": "150"
+        },
+        {
+          "key": "diamond-seed",
+          "value": "70"
+        },
+        {
+          "key": "diamond-diamond",
+          "value": "45"
+        }
+      ]
+    },
+    {
+      "mappingType": "discrete",
+      "mappingColumn": "edge_type",
+      "mappingColumnType": "String",
+      "visualProperty": "EDGE_STROKE_UNSELECTED_PAINT",
+      "map": [
+        {
+          "key": "seed-seed",
+          "value": "#52514e"
+        },
+        {
+          "key": "diamond-seed",
+          "value": "#898781"
+        },
+        {
+          "key": "diamond-diamond",
+          "value": "#898781"
+        }
+      ]
+    }
+  ]
+}

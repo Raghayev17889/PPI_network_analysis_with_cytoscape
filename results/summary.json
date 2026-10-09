@@ -1,0 +1,168 @@
+{
+  "disease": "Alzheimer's disease (DOID:10652)",
+  "hetionet": {
+    "disease": "Alzheimer's disease (DOID:10652)",
+    "genes": 20945,
+    "interactions": 147164,
+    "associated_genes": 196,
+    "upregulated_genes": 250,
+    "downregulated_genes": 250,
+    "pathways": 1822,
+    "go_processes": 11381,
+    "approved_drugs": 4,
+    "drug_target_genes": 35,
+    "druggable_genes": 1689
+  },
+  "interactome": {
+    "proteins": 14108,
+    "interactions": 137912,
+    "mean_degree": 19.550893110292034,
+    "max_degree": 1903,
+    "density": 0.0013859001283257981
+  },
+  "seed_mapping": {
+    "seed_genes": 196,
+    "in_interactome": 183,
+    "missing": [
+      "ABCA7",
+      "CYP46A1",
+      "SLC24A4",
+      "CYP2D6",
+      "STH",
+      "CALHM1",
+      "MS4A4A",
+      "SLC30A6",
+      "CASS4",
+      "NPS",
+      "MS4A6A",
+      "SLC18A3",
+      "SLC30A4"
+    ]
+  },
+  "module_significance": {
+    "genes_in_interactome": 183,
+    "observed_lcc": 135,
+    "observed_lcc_fraction": 0.7377049180327869,
+    "random_lcc_mean": 79.94,
+    "random_lcc_std": 9.780186708445399,
+    "z_score": 5.629749374053823,
+    "empirical_p": 0.000999000999000999,
+    "n_random": 1000
+  },
+  "diamond_cross_validation": {
+    "recovered": 18,
+    "expected": 2.621474820565744,
+    "fold_enrichment": 6.866363872270723
+  },
+  "filtering": [
+    {
+      "step": "seed genes",
+      "description": "disease-associated genes (Hetionet DaG)",
+      "proteins": 196,
+      "interactions": NaN
+    },
+    {
+      "step": "in interactome",
+      "description": "seeds present in the filtered interactome",
+      "proteins": 183,
+      "interactions": NaN
+    },
+    {
+      "step": "module expansion",
+      "description": "+ top 50 DIAMOnD proteins",
+      "proteins": 233,
+      "interactions": NaN
+    },
+    {
+      "step": "induced subgraph",
+      "description": "interactions among selected proteins",
+      "proteins": 233,
+      "interactions": 1086.0
+    },
+    {
+      "step": "largest component",
+      "description": "drop proteins disconnected from the main network",
+      "proteins": 190,
+      "interactions": 1085.0
+    }
+  ],
+  "network": {
+    "proteins": 190,
+    "interactions": 1085,
+    "seed_genes": 140,
+    "diamond_genes": 50,
+    "ad_drug_targets": 6,
+    "druggable": 63
+  },
+  "topology": {
+    "hub_degree_threshold": 32.0,
+    "bottleneck_betweenness_threshold": 0.021023642933950017,
+    "classes": {
+      "peripheral": 156,
+      "hub non-bottleneck": 15,
+      "non-hub bottleneck": 12,
+      "hub-bottleneck": 7
+    },
+    "top_bottlenecks": [
+      "APP",
+      "HSP90AA1",
+      "ESR1",
+      "AKT1",
+      "HSPD1",
+      "DLG4",
+      "TP53",
+      "UBQLN1",
+      "A2M",
+      "PSEN1"
+    ]
+  },
+  "clustering": {
+    "modularity": 0.47047463314149796,
+    "clusters": {
+      "1": {
+        "name": "APP processing & amyloid",
+        "size": 62
+      },
+      "2": {
+        "name": "Apoptosis & neuronal death",
+        "size": 59
+      },
+      "3": {
+        "name": "Translation & protein folding",
+        "size": 34
+      },
+      "4": {
+        "name": "Growth factor & IGF signalling",
+        "size": 26
+      },
+      "5": {
+        "name": "Glutamatergic synapse",
+        "size": 9
+      }
+    },
+    "stability_ari_mean": 0.7010746076520722,
+    "stability_ari_min": 0.3977714944429594
+  },
+  "cytoscape": {
+    "offline_files": {
+      "cyjs": "cytoscape/network/alzheimer_network.cyjs",
+      "graphml": "cytoscape/network/alzheimer_network.graphml"
+    },
+    "session": "cytoscape/alzheimer_network.cys",
+    "style_xml": "cytoscape/styles/alzheimer_style.xml",
+    "figures": [
+      "cytoscape/figures/alzheimer_network.png",
+      "cytoscape/figures/alzheimer_network.svg",
+      "cytoscape/figures/alzheimer_network.pdf",
+      "cytoscape/figures/cluster_1.png",
+      "cytoscape/figures/cluster_2.png",
+      "cytoscape/figures/cluster_3.png",
+      "cytoscape/figures/cluster_4.png",
+      "cytoscape/figures/cluster_5.png",
+      "cytoscape/figures/key_proteins.png",
+      "cytoscape/figures/key_proteins.svg"
+    ],
+    "cytoscape_version": "3.10.3"
+  },
+  "runtime_seconds": 65.5
+}
