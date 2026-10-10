@@ -31,6 +31,8 @@ from pathlib import Path
 import networkx as nx
 import pandas as pd
 
+from src.interactome import induced_subgraph
+
 logger = logging.getLogger(__name__)
 
 STYLE_NAME = "Alzheimer PPI"
@@ -279,7 +281,7 @@ def clustered_layout(graph: nx.Graph, labels: dict[str, int], spacing: float = 1
         share = 2 * radius[cluster] / total * 2 * math.pi
         centre = (ring * math.cos(angle + share / 2), ring * math.sin(angle + share / 2)) if ring else (0.0, 0.0)
         angle += share
-        sub = graph.subgraph(members)
+        sub = induced_subgraph(graph, members)  # stable node order -> identical layout every run
         if len(members) == 1:
             local = {members[0]: (0.0, 0.0)}
         elif nx.is_connected(sub):
@@ -404,7 +406,7 @@ def create_subnetwork(network: int, node_ids: list[str], name: str, graph: nx.Gr
     suid = p4c.create_subnetwork(nodes=node_suids(network, list(node_ids), base_url), nodes_by_col="SUID",
                                  subnetwork_name=name, network=network, base_url=base_url)
     p4c.set_visual_style(style, network=suid, base_url=base_url)
-    sub = graph.subgraph(node_ids)
+    sub = induced_subgraph(graph, node_ids)
     positions = clustered_layout(sub, {n: labels.get(n, 0) for n in node_ids}, spacing=170)
     apply_positions(positions, suid, base_url)
     return suid

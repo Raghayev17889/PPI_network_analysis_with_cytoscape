@@ -1,26 +1,26 @@
 symbol	role	centrality_class	degree	betweenness	closeness	cluster	ad_drug_target	druggable
-APP	seed	hub-bottleneck	85	0.45665986158736993	0.6019108280254777	1	False	False
-HSP90AA1	diamond	hub-bottleneck	52	0.087456475905826	0.525	3	False	True
-ESR1	seed	hub-bottleneck	34	0.06086338894023993	0.4489311163895487	4	False	True
-AKT1	seed	non-hub bottleneck	25	0.042066441325623614	0.47368421052631576	2	False	True
-HSPD1	seed	hub-bottleneck	40	0.03925760820688287	0.4934725848563969	3	False	False
-DLG4	seed	non-hub bottleneck	7	0.03891318194049079	0.39293139293139295	5	False	True
-TP53	seed	non-hub bottleneck	21	0.03822119485471662	0.4117647058823529	2	False	True
-UBQLN1	seed	non-hub bottleneck	8	0.036675260000091144	0.4021276595744681	1	False	False
-A2M	seed	non-hub bottleneck	26	0.032948569103528245	0.44786729857819907	1	False	True
-PSEN1	seed	non-hub bottleneck	23	0.031911045432128596	0.4643734643734644	1	False	False
-CTSB	seed	non-hub bottleneck	8	0.027592747023102996	0.4021276595744681	4	False	False
-CASP3	seed	non-hub bottleneck	15	0.02752362847985315	0.45215311004784686	2	False	True
-VIM	diamond	hub-bottleneck	40	0.024999079877708823	0.4896373056994819	3	False	False
-VDAC1	diamond	hub-bottleneck	39	0.02383527586926487	0.43249427917620137	3	False	True
-CLU	seed	non-hub bottleneck	9	0.023034318591592762	0.42954545454545456	2	False	False
-SNCA	seed	non-hub bottleneck	21	0.02273937600208113	0.4643734643734644	2	False	False
-BCL2L1	diamond	non-hub bottleneck	17	0.02174223942262151	0.4126637554585153	2	False	False
-PSEN2	seed	non-hub bottleneck	21	0.02148640508346584	0.4315068493150685	1	False	False
-GAPDH	seed	hub-bottleneck	38	0.021051026370023592	0.4909090909090909	3	False	False
-GNB2L1	diamond	hub non-bottleneck	38	0.02102060032994184	0.4334862385321101	3	False	False
-TTR	seed	peripheral	8	0.019541207861627	0.42567567567567566	4	False	True
-CD4	diamond	hub non-bottleneck	32	0.01912014487022726	0.4090909090909091	3	False	False
-PTK2B	seed	peripheral	7	0.0190245257951674	0.3772455089820359	2	False	True
-CTSD	seed	peripheral	7	0.018949726918701035	0.4209354120267261	4	False	False
-ANXA6	diamond	hub non-bottleneck	35	0.017166810174447242	0.441588785046729	3	False	False
+APP	seed	hub-bottleneck	85	0.45665986	0.60191083	1	False	False
+HSP90AA1	diamond	hub-bottleneck	52	0.087456476	0.525	3	False	True
+ESR1	seed	hub-bottleneck	34	0.060863389	0.44893112	4	False	True
+AKT1	seed	non-hub bottleneck	25	0.042066441	0.47368421	2	False	True
+HSPD1	seed	hub-bottleneck	40	0.039257608	0.49347258	3	False	False
+DLG4	seed	non-hub bottleneck	7	0.038913182	0.39293139	5	False	True
+TP53	seed	non-hub bottleneck	21	0.038221195	0.41176471	2	False	True
+UBQLN1	seed	non-hub bottleneck	8	0.03667526	0.40212766	1	False	False
+A2M	seed	non-hub bottleneck	26	0.032948569	0.4478673	1	False	True
+PSEN1	seed	non-hub bottleneck	23	0.031911045	0.46437346	1	False	False
+CTSB	seed	non-hub bottleneck	8	0.027592747	0.40212766	4	False	False
+CASP3	seed	non-hub bottleneck	15	0.027523628	0.45215311	2	False	True
+VIM	diamond	hub-bottleneck	40	0.02499908	0.48963731	3	False	False
+VDAC1	diamond	hub-bottleneck	39	0.023835276	0.43249428	3	False	True
+CLU	seed	non-hub bottleneck	9	0.023034319	0.42954545	2	False	False
+SNCA	seed	non-hub bottleneck	21	0.022739376	0.46437346	2	False	False
+BCL2L1	diamond	non-hub bottleneck	17	0.021742239	0.41266376	2	False	False
+PSEN2	seed	non-hub bottleneck	21	0.021486405	0.43150685	1	False	False
+GAPDH	seed	hub-bottleneck	38	0.021051026	0.49090909	3	False	False
+GNB2L1	diamond	hub non-bottleneck	38	0.0210206	0.43348624	3	False	False
+TTR	seed	peripheral	8	0.019541208	0.42567568	4	False	True
+CD4	diamond	hub non-bottleneck	32	0.019120145	0.40909091	3	False	False
+PTK2B	seed	peripheral	7	0.019024526	0.37724551	2	False	True
+CTSD	seed	peripheral	7	0.018949727	0.42093541	4	False	False
+ANXA6	diamond	hub non-bottleneck	35	0.01716681	0.44158879	3	False	False

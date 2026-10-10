@@ -24,6 +24,7 @@ import networkx as nx
 import pandas as pd
 
 from src.hetionet import DiseaseData
+from src.interactome import induced_subgraph
 
 logger = logging.getLogger(__name__)
 
@@ -51,8 +52,10 @@ class DiseaseNetwork:
 
     def edge_table(self) -> pd.DataFrame:
         """One row per interaction (Cytoscape edge table: source, target, interaction, ...)."""
+        # Undirected edges are written with a canonical orientation (smaller ID first).
         rows = [
-            {"source": u, "target": v, "interaction": "pp", **attrs} for u, v, attrs in self.graph.edges(data=True)
+            {"source": min(u, v, key=str), "target": max(u, v, key=str), "interaction": "pp", **attrs}
+            for u, v, attrs in self.graph.edges(data=True)
         ]
         return pd.DataFrame(rows).sort_values(["source", "target"]).reset_index(drop=True)
 
@@ -90,12 +93,12 @@ def build_disease_network(
     selected = list(dict.fromkeys(seeds + added["gene"].tolist()))
     _log(log, "module expansion", f"+ top {len(added)} DIAMOnD proteins", len(selected))
 
-    graph = interactome.subgraph(selected).copy()
+    graph = induced_subgraph(interactome, selected)
     _log(log, "induced subgraph", "interactions among selected proteins", graph.number_of_nodes(), graph.number_of_edges())
 
     giant = max(nx.connected_components(graph), key=len)
     dropped = sorted(set(graph) - giant)
-    graph = graph.subgraph(giant).copy()
+    graph = induced_subgraph(graph, giant)
     _log(log, "largest component", "drop proteins disconnected from the main network",
          graph.number_of_nodes(), graph.number_of_edges())
 

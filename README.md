@@ -184,7 +184,7 @@ To analyse another disease, change `disease.id` in `config/config.yaml` to any o
 (e.g. `DOID:14330` Parkinson's disease, `DOID:1612` breast cancer) and update or remove `cluster_names`.
 
 ```bash
-pytest          # 43 tests: parsing, DIAMOnD vs brute force, statistics, style, layout, end-to-end
+pytest          # 45 tests: parsing, DIAMOnD vs brute force, statistics, style, layout, end-to-end
 ```
 
 ## Limitations

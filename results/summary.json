@@ -96,7 +96,7 @@
   },
   "topology": {
     "hub_degree_threshold": 32.0,
-    "bottleneck_betweenness_threshold": 0.021023642933950017,
+    "bottleneck_betweenness_threshold": 0.0210236426,
     "classes": {
       "peripheral": 156,
       "hub non-bottleneck": 15,
@@ -164,5 +164,5 @@
     ],
     "cytoscape_version": "3.10.3"
   },
-  "runtime_seconds": 65.5
+  "runtime_seconds": 63.5
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<vizmap id="VizMap-2026_10_21-07_11" documentVersion="3.1">
+<vizmap id="VizMap-2026_10_21-07_25" documentVersion="3.1">
     <visualStyle name="Alzheimer PPI">
         <network>
             <visualProperty default="0.0" name="NETWORK_CENTER_Z_LOCATION"/>
@@ -64,9 +64,9 @@
             <visualProperty default="28.0" name="NODE_SIZE">
                 <continuousMapping attributeName="betweenness" attributeType="float">
                     <continuousMappingPoint attrValue="0.0" equalValue="18.0" greaterValue="18.0" lesserValue="18.0"/>
-                    <continuousMappingPoint attrValue="0.0039875551493005834" equalValue="30.0" greaterValue="30.0" lesserValue="30.0"/>
-                    <continuousMappingPoint attrValue="0.019937775746502916" equalValue="55.0" greaterValue="55.0" lesserValue="55.0"/>
-                    <continuousMappingPoint attrValue="0.03987555149300583" equalValue="80.0" greaterValue="80.0" lesserValue="80.0"/>
+                    <continuousMappingPoint attrValue="0.003987555126" equalValue="30.0" greaterValue="30.0" lesserValue="30.0"/>
+                    <continuousMappingPoint attrValue="0.019937775629999998" equalValue="55.0" greaterValue="55.0" lesserValue="55.0"/>
+                    <continuousMappingPoint attrValue="0.039875551259999996" equalValue="80.0" greaterValue="80.0" lesserValue="80.0"/>
                 </continuousMapping>
             </visualProperty>
             <visualProperty default="org.cytoscape.cg.model.NullCustomGraphics,0,[ Remove Graphics ]," name="NODE_CUSTOMGRAPHICS_2"/>

@@ -11,6 +11,22 @@ import pandas as pd
 logger = logging.getLogger(__name__)
 
 
+def induced_subgraph(graph: nx.Graph, nodes) -> nx.Graph:
+    """Copy of the subgraph induced by ``nodes``, in ``graph``'s own node and edge order.
+
+    ``graph.subgraph(nodes)`` iterates over ``nodes`` as a set, and the order of a
+    set of strings changes with Python's per-process hash seed. That order then
+    leaks into edge orientation, layouts and floating-point sums (betweenness),
+    so results would differ slightly between runs. Building the copy in the
+    parent graph's order keeps every output byte-for-byte reproducible.
+    """
+    keep = set(nodes)
+    sub = nx.Graph()
+    sub.add_nodes_from((n, graph.nodes[n]) for n in graph if n in keep)
+    sub.add_edges_from((u, v, d) for u, v, d in graph.edges(data=True) if u in keep and v in keep)
+    return sub
+
+
 def build_interactome(
     interactions: pd.DataFrame,
     symbols: dict[str, str] | None = None,
@@ -38,7 +54,7 @@ def build_interactome(
     if largest_component and graph.number_of_nodes():
         giant = max(nx.connected_components(graph), key=len)
         removed = graph.number_of_nodes() - len(giant)
-        graph = graph.subgraph(giant).copy()
+        graph = induced_subgraph(graph, giant)
         logger.info("Interactome LCC: %d proteins (%d outside removed)", len(giant), removed)
     if symbols:
         nx.set_node_attributes(graph, {n: symbols.get(n, n) for n in graph}, "symbol")

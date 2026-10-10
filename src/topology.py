@@ -39,6 +39,10 @@ def centrality_table(graph: nx.Graph) -> pd.DataFrame:
             "k_core": pd.Series(nx.core_number(graph)).reindex(nodes).to_numpy(),
         }
     )
+    # Floating-point sums (betweenness) and the eigensolver differ in the last digits
+    # between runs; 8 significant digits keep exported tables byte-reproducible.
+    for column in ("betweenness", "closeness", "eigenvector", "clustering"):
+        table[column] = table[column].map(lambda x: float(f"{x:.8g}"))
     return table
 
 
